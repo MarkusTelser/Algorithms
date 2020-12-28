@@ -3,6 +3,7 @@ from sorting_algorithm import selection_sort
 from sorting_algorithm import merge_sort
 from sorting_algorithm import bubble_sort
 from sorting_algorithm import comb_sort
+from sorting_algorithm import counting_sort
 from random import *
 
 
@@ -21,3 +22,4 @@ print("Insertion sort:", insertion_sort.sort(array)[1])
 print("Merge sort:", merge_sort.sort(array)[1])
 print("Bubble sort:", bubble_sort.sort(array)[1])
 print("Comb sort:", comb_sort.sort(array)[1])
+print("Counting sort:", counting_sort.sort(array)[1])
