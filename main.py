@@ -4,6 +4,7 @@ from sorting_algorithm import merge_sort
 from sorting_algorithm import bubble_sort
 from sorting_algorithm import comb_sort
 from sorting_algorithm import counting_sort
+from sorting_algorithm import bucket_sort
 from random import *
 
 
@@ -15,7 +16,7 @@ def random_data(length, start, end):
     return data
 
 
-array = random_data(10000, 0, 10)
+array = random_data(10, 0, 10)
 # testing sort algorithm
 print("Selection sort:", selection_sort.sort(array)[1])
 print("Insertion sort:", insertion_sort.sort(array)[1])
@@ -23,3 +24,4 @@ print("Merge sort:", merge_sort.sort(array)[1])
 print("Bubble sort:", bubble_sort.sort(array)[1])
 print("Comb sort:", comb_sort.sort(array)[1])
 print("Counting sort:", counting_sort.sort(array)[1])
+print("Bucket sort:", bucket_sort.sort(array)[1])
