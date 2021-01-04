@@ -1,4 +1,5 @@
 from sorting_algorithm import sort
+from search_algorithm import search
 
-# test different sort algorithms
 sort.run()
+search.run()
