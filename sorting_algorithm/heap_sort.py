@@ -2,6 +2,7 @@ import time
 
 
 def sort(array):
+    print("Heap sort running...")
     start = time.time()
     result = array.copy()
     for i in range(len(result) // 2 - 1, -1, -1):
@@ -12,6 +13,7 @@ def sort(array):
         result[i], result[0] = result[0], result[i]  # swap
         heapify(result, i, 0)
     end = time.time()
+    print("Heap sort finished")
     return result, end - start
 
 

@@ -1,4 +1,4 @@
 from sorting_algorithm import sort
 
-# test different algorithms
+# test different sort algorithms
 sort.run()

@@ -2,6 +2,7 @@ import time
 
 
 def sort(array):
+    print("Bubble sort running...")
     start = time.time()
     result = array.copy()
     while True:
@@ -14,4 +15,5 @@ def sort(array):
         if not sorted:
             break
     end = time.time()
+    print("Bubble sort finished")
     return result, end - start

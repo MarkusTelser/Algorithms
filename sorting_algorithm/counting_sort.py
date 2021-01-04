@@ -2,6 +2,7 @@ import time
 
 
 def sort(array):
+    print("Counting sort running...")
     start = time.time()
     result = [0] * len(array)
     smallest_number = array[0]
@@ -24,4 +25,5 @@ def sort(array):
         result[count_array[array[i] - smallest_number] - 1] = array[i]
         count_array[array[i] - smallest_number] -= 1
     end = time.time()
+    print("Counting sort finished")
     return result, end - start

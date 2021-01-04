@@ -2,9 +2,11 @@ import time
 
 
 def sort(array):
+    print("Merge sort running...")
     start = time.time()
     result = mergesort(array)
     end = time.time()
+    print("Merge sort finished")
     return result, end - start
 
 

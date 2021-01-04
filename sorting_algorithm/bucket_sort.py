@@ -3,6 +3,7 @@ import time
 
 
 def sort(array):
+    print("Bucket sort running...")
     start = time.time()
     result = []
 
@@ -24,10 +25,23 @@ def sort(array):
 
     # Sort elements within the buckets using Insertion Sort
     for z in range(len(array)):
-        buckets_list[z] = insertion_sort.sort(buckets_list[z])[0]
+        buckets_list[z] = insertion_sort(buckets_list[z])
 
     # Concatenate buckets with sorted elements into a single list
     for x in range(len(array)):
         result = result + buckets_list[x]
     end = time.time()
+    print("Bucket sort finished")
     return result, end - start
+
+
+def insertion_sort(array):
+    result = array.copy()
+    for i in range(1, len(result)):
+        paste = result[i]
+        j = i
+        while j > 0 and result[j - 1] > paste:
+            result[j] = result[j - 1]
+            j = j - 1
+        result[j] = paste
+    return result

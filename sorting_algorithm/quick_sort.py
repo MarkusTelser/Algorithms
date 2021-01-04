@@ -5,9 +5,11 @@ import math
 # not working
 
 def sort(array):
+    print("Quick sort running...")
     start = time.time()
     result = quicksort(array, 0, len(array) - 1)
     end = time.time()
+    print("Quick sort finished")
     return result, end - start
 
 

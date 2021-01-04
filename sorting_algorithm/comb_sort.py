@@ -2,6 +2,7 @@ import time
 
 
 def sort(array):
+    print("Comb sort running...")
     start = time.time()
     shrink = 1.3
     _gap = len(array)
@@ -19,4 +20,5 @@ def sort(array):
                 result[i], result[sm] = result[sm], result[i]
                 sorted = False
     end = time.time()
+    print("Comb sort finished")
     return result, end - start

@@ -2,6 +2,7 @@ import time
 
 
 def sort(array):
+    print("Shell sort running...")
     start = time.time()
     result = array.copy()
     columns = [2147483647, 1131376761, 410151271, 157840433,
@@ -19,4 +20,5 @@ def sort(array):
             result[j] = t
 
     end = time.time()
+    print("Shell sort finished")
     return result, end - start
