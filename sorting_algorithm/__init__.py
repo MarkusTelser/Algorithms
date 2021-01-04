@@ -1,0 +1,11 @@
+# import all sorting algorithms that are going to be tested
+import sorting_algorithm.bubble_sort
+import sorting_algorithm.bucket_sort
+import sorting_algorithm.comb_sort
+import sorting_algorithm.counting_sort
+import sorting_algorithm.heap_sort
+import sorting_algorithm.insertion_sort
+import sorting_algorithm.merge_sort
+import sorting_algorithm.quick_sort
+import sorting_algorithm.selection_sort
+import sorting_algorithm.shell_sort
