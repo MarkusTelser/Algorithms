@@ -1,1 +1,1 @@
-This is a collection of sort and find algorithms.
+This is a collection of all sort of algorithms.
