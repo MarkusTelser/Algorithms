@@ -1,1 +1,2 @@
 import search_algorithm.binary_search
+import search_algorithm.linear_search
